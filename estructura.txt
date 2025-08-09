@@ -1,0 +1,109 @@
+Plan de Acción Detallado – Proyecto Web Python + HTML5 (MVC, OOP, Git/GitHub)
+
+Fase 1 – Preparación
+
+    Presentar el diagrama de flujo completo ✅
+        Mostrar pasos globales.
+        Explicar el orden de desarrollo.
+
+    Explicar arquitectura MVC y OOP
+        Qué es MVC (Modelo, Vista, Controlador).
+        Cómo se implementa con Python y HTML5.
+        Ventajas de OOP en proyectos web.
+
+    Configurar entorno de trabajo
+        Instalar Python 3.x.
+        Crear entorno virtual (venv).
+        Instalar framework web ligero (Flask o similar).
+        Crear carpeta de proyecto.
+
+    Configurar control de versiones
+        Inicializar repositorio Git.
+        Crear .gitignore (Python, HTML, CSS, etc.).
+        Hacer primer commit.
+        Conectar con GitHub (git remote add origin).
+
+
+Fase 2 – Estructura de Archivos y Carpetas
+
+    Diseñar estructura MVC
+
+/proyecto
+├── app/
+│   ├── models/
+│   ├── views/
+│   │   ├── header.html
+│   │   ├── navbar.html
+│   │   ├── sidebar.html
+│   │   ├── maincontent.html
+│   │   └── layout.html
+│   ├── controllers/
+│   ├── static/
+│   │   ├── css/
+│   │   └── img/
+│   └── __init__.py
+├── run.py
+└── requirements.txt
+
+Fase 3 – Desarrollo de la Primera Página (antes de login)
+
+    Crear header.html
+        Tres columnas (izq: “Aplicación”, centro: botón login, der: imagen circular).
+        CSS para hacerlo estático y con esquinas redondeadas.
+
+    Crear navbar.html
+        Botón "Olvidé mi contraseña" (esquinas redondeadas).
+        Estático debajo del header.
+
+    Crear sidebar.html
+        Botón login.
+        Botón resetear contraseña.
+        CSS para diseño estático a la izquierda.
+
+    Crear maincontent.html
+        Espacio dinámico para contenido.
+
+    Integrar todas las vistas en layout.html (plantilla base).
+
+    Pruebas visuales y de posicionamiento
+        Verificar que header, navbar y sidebar sean fijos.
+        Verificar que el main content sea dinámico.
+
+
+Fase 4 – Funcionalidad de Login
+
+    Programar lógica de login (controlador + modelo)
+        Validar credenciales (dummy primero).
+        Redirigir a página posterior al login.
+
+    Probar login
+        Caso éxito → página posterior.
+        Caso error → mensaje en main content.
+
+Fase 5 – Página Posterior al Login
+
+    Modificar header.html para tener Menú 1, Menú 2, Menú 3
+        Indicar visualmente cuál está seleccionado.
+
+    Programar navbar.html dinámico
+        Menú 1 → Submenú 1-1, 1-2, 1-3.
+        Menú 2 → Submenú 2-1, 2-2, 2-3.
+        Menú 3 → idem.
+
+    Programar sidebar.html dinámico
+        Según submenú seleccionado, mostrar menú lateral correspondiente.
+
+    Programar maincontent.html para mostrar historial de clics
+
+Fase 6 – Pruebas y Optimización
+
+    Pruebas funcionales completas
+        Navegación entre menús y submenús.
+        Login y logout.
+        Visualización correcta en distintos navegadores.
+
+    Optimizar código y diseño
+        CSS responsivo.
+        Código Python ordenado por MVC.
+
+    Commit final y push a GitHub
