@@ -107,3 +107,25 @@ Fase 6 – Pruebas y Optimización
         Código Python ordenado por MVC.
 
     Commit final y push a GitHub
+
+
+    estructura:
+    proyecto_web_mvc/
+├── app/
+│   ├── __init__.py
+│   ├── controllers/
+│   │    └── main.py
+│   ├── models/
+│   └── views/             # aquí irán header.html, navbar.html, etc.
+│        ├── layout.html
+│        ├── header.html
+│        ├── navbar.html
+│        ├── sidebar.html
+│        └── maincontent.html
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── img/
+│       └── avatar.png   # placeholder
+├── run.py
+└── requirements.txt
